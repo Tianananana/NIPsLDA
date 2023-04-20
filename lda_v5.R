@@ -116,7 +116,7 @@ func_lda_plots = function(dtm,
     cat("\nEND Topic modeling: ", Sys.time())
     
     # Running topic diagnostics
-    # print(topic_diagnostics(lda, dtm))
+    print(topic_diagnostics(lda, dtm))
     
     # 2. Topic - term betas
     topic_term = tidy(lda, 
